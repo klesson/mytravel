@@ -1,0 +1,59 @@
+body {
+    background-image: url(img/desk.png);
+    /*background-repeat: no-repeat;*/
+}
+
+.pin {
+    display: block;
+    margin: auto;
+    height: 50px;
+}
+
+.photo-container {
+    text-align: center;
+}
+
+.photo {
+    display: inline-block;
+    position: relative;
+    height: 151px;
+    width: 156px;
+    background-color: white;
+    margin: 25px;
+    padding: 10px 10px 40px 10px;
+    border: 1px solid gray;
+    box-shadow: 5px 7px 9px 0px #777;
+    transition: transform 0.4s 0.2s;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.left9 {
+    transform: rotate(-9deg);
+}
+
+.right9 {
+    transform: rotate(9deg);
+}
+
+.right20 {
+    transform: rotate(20deg);
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.photo:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.photo:hover img {
+    filter: none;
+}
